@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#650f29">
+
+  <title>زفاف أحمد ونيرمين | Wedding Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="locked">
+
+  <!-- Opening Envelope -->
+  <div class="opening-screen" id="openingScreen">
+    <div class="opening-heading">
+      <span class="small-heading">YOU ARE INVITED</span>
+      <h1>Ahmad & Nirmeen</h1>
+      <p>دعوة خاصة ليومٍ لا يُنسى</p>
+    </div>
+
+    <button class="envelope-button" id="openEnvelope"
+      aria-label="افتح دعوة الزفاف">
+
+      <div class="envelope">
+        <div class="envelope-back"></div>
+
+        <div class="invitation-paper">
+          <span>THE WEDDING OF</span>
+          <strong>Ahmad & Nirmeen</strong>
+          <small>27 . 07 . 2027</small>
+        </div>
+
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+        <div class="wax-seal">A <span>&</span> N</div>
+      </div>
+    </button>
+
+    <p class="tap-message">اضغطوا على الظرف لفتح الدعوة</p>
+    <span class="opening-bottom">CELEBRATE WITH US ♡</span>
+  </div>
+
+  <!-- Main Invitation -->
+  <main id="mainContent" class="main-content" aria-hidden="true">
+
+    <section class="hero section">
+      <div class="ornament">❦</div>
+
+      <p class="eyebrow">THE WEDDING CELEBRATION</p>
+
+      <h2 class="bismillah">بسم الله الرحمن الرحيم</h2>
+
+      <p class="quran">
+        ﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ
+        أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا
+        وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ﴾
+      </p>
+
+      <span class="surah">سورة الروم | الآية 21</span>
+
+      <div class="gold-divider"><span>✦</span></div>
+
+      <p class="intro">
+        بكل الحب والفرح، وبقلوبٍ تملؤها السعادة،
+        نتشرف بدعوتكم لمشاركتنا أجمل لحظات العمر،
+        والاحتفال ببداية حكايةٍ كتبها الله بالمودة والرحمة.
+      </p>
+
+      <div class="couple-names">
+        <span class="english-label">THE WEDDING OF</span>
+        <h1>أحمد</h1>
+        <span class="ampersand">&</span>
+        <h1>نيرمين</h1>
+      </div>
+
+      <p class="invitation-message">
+        يسعدنا ويشرّفنا حضوركم حفل زفافنا،
+        لتكتمل فرحتنا بوجودكم بيننا.
+      </p>
+
+      <div class="scroll-hint">⌄</div>
+    </section>
+
+    <!-- Wedding Date -->
+    <section class="details section reveal">
+      <div class="section-heading">
+        <span>MARK YOUR CALENDAR</span>
+        <h2>موعد فرحتنا</h2>
+        <div class="mini-divider">✦</div>
+      </div>
+
+      <div class="date-card">
+        <p>الثلاثاء</p>
+        <strong>27</strong>
+        <h3>يوليو 2027</h3>
+        <div class="date-line"></div>
+        <p>الساعة السابعة مساءً</p>
+        <span>7:00 PM</span>
+      </div>
+
+      <a class="outline-button" id="calendarButton" href="#">
+        أضيفوا الموعد إلى التقويم
+      </a>
+    </section>
+
+    <!-- Countdown -->
+    <section class="countdown-section section reveal">
+      <div class="section-heading">
+        <span>COUNTING DOWN THE MOMENTS</span>
+        <h2>باقي على فرحتنا</h2>
+        <div class="mini-divider">✦</div>
+      </div>
+
+      <div class="countdown" id="countdown">
+        <div class="time-box">
+          <strong id="days">00</strong>
+          <span>يوم</span>
+        </div>
+        <div class="time-box">
+          <strong id="hours">00</strong>
+          <span>ساعة</span>
+        </div>
+        <div class="time-box">
+          <strong id="minutes">00</strong>
+          <span>دقيقة</span>
+        </div>
+        <div class="time-box">
+          <strong id="seconds">00</strong>
+          <span>ثانية</span>
+        </div>
+      </div>
+
+      <p class="countdown-message" id="countdownMessage">
+        كل لحظة تقرّبنا من أجمل يوم ♡
+      </p>
+    </section>
+
+    <!-- Venue -->
+    <section class="venue section reveal">
+      <div class="section-heading">
+        <span>THE CELEBRATION VENUE</span>
+        <h2>مكان الحفل</h2>
+        <div class="mini-divider">✦</div>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-icon">⌖</div>
+        <p>نتشرف باستقبالكم في</p>
+        <h3>DUNES CLUB</h3>
+        <p>الثلاثاء، 27 يوليو 2027</p>
+        <p>الساعة 7:00 مساءً</p>
+
+        <a class="primary-button"
+          href="https://maps.app.goo.gl/5A9B4tfxRgWb1zRL9?g_st=ic"
+          target="_blank"
+          rel="noopener noreferrer">
+          افتحوا موقع القاعة
+        </a>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section section reveal">
+      <div class="section-heading">
+        <span>OUR BEAUTIFUL MOMENTS</span>
+        <h2>لحظات من حكايتنا</h2>
+        <div class="mini-divider">✦</div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/photo1.jpg" alt="الصورة الأولى"
+            onerror="this.style.display='none'">
+          <span>♡</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo2.jpg" alt="الصورة الثانية"
+            onerror="this.style.display='none'">
+          <span>♡</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo3.jpg" alt="الصورة الثالثة"
+            onerror="this.style.display='none'">
+          <span>♡</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp-section section reveal">
+      <div class="section-heading">
+        <span>KINDLY REPLY</span>
+        <h2>تأكيد الحضور</h2>
+        <div class="mini-divider">✦</div>
+      </div>
+
+      <p class="rsvp-intro">
+        وجودكم بيننا هو أجمل ما يُكمل فرحتنا.
+        يرجى تأكيد حضوركم.
+      </p>
+
+      <form id="rsvpForm" class="rsvp-form">
+        <label for="guestName">الاسم الكريم</label>
+        <input id="guestName" type="text"
+          placeholder="الاسم الكامل" required>
+
+        <label for="guestCount">عدد الأشخاص</label>
+        <select id="guestCount" required>
+          <option value="1">شخص واحد</option>
+          <option value="2">شخصان</option>
+          <option value="3">3 أشخاص</option>
+          <option value="4">4 أشخاص</option>
+          <option value="5">5 أشخاص</option>
+        </select>
+
+        <label for="attendance">هل ستشاركوننا الفرحة؟</label>
+        <select id="attendance" required>
+          <option value="نعم، سأحضر بكل سرور">
+            نعم، سأحضر بكل سرور ❤️
+          </option>
+          <option value="أعتذر عن الحضور">
+            أعتذر عن الحضور
+          </option>
+        </select>
+
+        <button type="submit" class="primary-button">
+          إرسال تأكيد الحضور
+        </button>
+
+        <p id="rsvpStatus" class="form-status"
+          aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- Closing -->
+    <section class="closing section reveal">
+      <div class="ornament">❦</div>
+
+      <p class="closing-arabic">
+        حضوركم فرحة، ودعواتكم أجمل هدية،
+        وبكم تكتمل أجمل ليلة في عمرنا.
+      </p>
+
+      <h2>Ahmad & Nirmeen</h2>
+
+      <p class="closing-english">Celebrate With Us ❤️</p>
+
+      <div class="gold-divider"><span>✦</span></div>
+
+      <span>27 JULY 2027</span>
+    </section>
+
+    <footer>
+      MADE WITH LOVE ♡
+    </footer>
+  </main>
+
+  <!-- Music -->
+  <button class="music-button" id="musicButton"
+    aria-label="تشغيل أو إيقاف الموسيقى"
+    aria-pressed="false" hidden>
+    ♫
+  </button>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>
